@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "copyToOutput": {
+      "include": [
+        "appsettings.json"
+      ]
+    },
+    "embed": {
+      "include": [
+        "Scripts/*"
+      ]
+    }
+  },
+  "publishOptions": {
+    "include": [
+      "appsettings.json"
+    ]
+  },
+  "dependencies": {
+    "Microsoft.Extensions.Configuration": "1.1.0",
+    "Microsoft.Extensions.Configuration.CommandLine": "1.0.0",
+    "microsoft.extensions.configuration.environmentvariables": "1.1.0",
+    "microsoft.extensions.configuration.json": "1.1.0",
+    "System.Data.SqlClient": "4.1.0",
+    "Dapper": "1.50.2",
+    "System.Linq": "4.3.0"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "version": "1.1.0",
+          "type": "platform"
+        }
+      }
+    }
+  }
+}
